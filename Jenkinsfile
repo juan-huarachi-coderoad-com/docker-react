@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('') {
       steps {
-        echo 'Hello My first message'
+        echo 'Hola desde inicio'
+      }
+    }
+    stage('2') {
+      steps {
+        echo 'Hola stage 2'
       }
     }
   }
