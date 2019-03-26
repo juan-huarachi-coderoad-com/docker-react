@@ -13,3 +13,11 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  const div2 = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+  throw new Error('fail test');
+});
